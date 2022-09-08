@@ -29,7 +29,7 @@ const loadTracks=()=>{
 
 // AJAX call by new method (fetch)
 const searchMusic=(artistName)=>{
-    const URL=`http://itunes.apple.com/search?term=${artistName}&limit=30`;
+    const URL=`https://itunes.apple.com/search?term=${artistName}&limit=30`;
     const promise=fetch(URL);
     promise.then(response=>{
        const pr=response.json()
