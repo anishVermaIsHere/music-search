@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  box-sizing: border-box !important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+
+/* variables */
+/* start */
+/* end */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #CFD8DC;
+}
+
+a, a:focus, a:link {
+  color: #fff;
+}
+
+.ml-3 {
+  margin-left: 6px;
+}
+
+header {
+  background-image: linear-gradient(#3241a0, #35428d);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+header .navbar {
+  position: relative;
+}
+header .navbar .menu-btn {
+  display: none;
+  font-size: 2.2rem;
+}
+header .navbar .menu-btn .fa-bars {
+  color: #fff;
+  cursor: pointer;
+}
+@media all and (max-width: 1003px) {
+  header .navbar .menu-btn {
+    display: block;
+    z-index: 30;
+  }
+}
+@media all and (max-width: 730px) {
+  header .navbar .menu-btn {
+    font-size: 1.8rem;
+  }
+}
+@media all and (max-width: 380px) {
+  header .navbar .menu-btn {
+    margin-left: -45px;
+    font-size: 1.5rem;
+  }
+}
+header .navbar .nav-menu ul {
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+}
+header .navbar .nav-menu ul li {
+  display: inline-flex;
+  margin: 0 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.8rem;
+  border: 1px solid #bdc4ec;
+}
+@media all and (max-width: 1003px) {
+  header .navbar .nav-menu ul li {
+    display: inline-block;
+    margin: 0.2rem 0;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+header .navbar .nav-menu ul li a {
+  color: #fff;
+}
+header .navbar .nav-menu ul li:hover {
+  background-color: #5863df;
+  color: #fff;
+}
+@media all and (max-width: 1003px) {
+  header .navbar .nav-menu {
+    background-image: linear-gradient(rgba(20, 27, 70, 0.8784313725), #151d4d);
+    width: 250px;
+    position: fixed;
+    z-index: 20;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}
+header .navbar .nav-logo {
+  margin: 0.5rem 5rem;
+}
+@media all and (max-width: 730px) {
+  header .navbar .nav-logo {
+    margin: 0;
+  }
+}
+header .navbar .nav-logo #logo-title a {
+  color: #fff;
+}
+header .navbar .nav-logo #logo-title a img {
+  height: 50px;
+}
+@media all and (max-width: 730px) {
+  header .navbar .nav-logo #logo-title a img {
+    height: 35px;
+  }
+}
+@media all and (max-width: 465px) {
+  header .navbar .nav-logo #logo-title a img {
+    height: 30px;
+    margin-top: 5px;
+  }
+}
+header .navbar .nav-search {
+  height: 45px;
+  width: 350px;
+  position: relative;
+  z-index: 4;
+}
+@media all and (max-width: 730px) {
+  header .navbar .nav-search {
+    width: 300px;
+  }
+}
+@media all and (max-width: 465px) {
+  header .navbar .nav-search {
+    height: 40px;
+    margin: 0 0.8rem;
+  }
+}
+header .navbar .nav-search .fa-magnifying-glass {
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 0.5rem;
+  border-radius: 1.8rem;
+  cursor: pointer;
+  background-color: #35428d;
+}
+header .navbar .nav-search input[type=search] {
+  height: 100%;
+  width: 100%;
+  padding: 0 3rem 0 1rem;
+  background-color: #5265c5;
+  border-radius: 1.8rem;
+  border: 1px solid #bdc4ec;
+  outline: none;
+  color: #fff;
+}
+header .navbar .nav-search ::-moz-placeholder {
+  color: #fff;
+}
+header .navbar .nav-search :-ms-input-placeholder {
+  color: #fff;
+}
+header .navbar .nav-search ::placeholder {
+  color: #fff;
+}
+
+main {
+  padding: 80px 5px;
+}
+main .container .head-results {
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .container .head-results #clear-results {
+  display: inline-block;
+  padding: 0 0.8rem;
+  margin-right: 1rem;
+  border-radius: 1.3rem;
+  background-color: #3d404e;
+  color: #fff;
+  cursor: pointer;
+}
+main .container .carousel-container {
+  height: 300px;
+}
+main .container .music-tracks-container {
+  gap: 12px;
+  padding: 1rem;
+  justify-content: center;
+}
+main .container .music-tracks-container .card {
+  background-image: linear-gradient(#2c2d2e, #3d404e);
+  border: 1px solid #bdc4ec;
+}
+main .container .music-tracks-container .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 150px;
+  width: 180px;
+}
+main .container .music-tracks-container .card .card-body {
+  padding: 0.5rem;
+}
+main .container .music-tracks-container .card .card-body p, main .container .music-tracks-container .card .card-body h6 {
+  font-size: 14px;
+  color: #fff;
+}
+
+footer {
+  font-family: var(--fontpri);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-image: linear-gradient(#3241a0, #35428d);
+  color: #fff;
+}
+footer div {
+  margin: 0 0.8rem;
+}
+@media all and (max-width: 991px) {
+  footer {
+    flex-direction: column-reverse;
+  }
+}/*# sourceMappingURL=music.css.map */
